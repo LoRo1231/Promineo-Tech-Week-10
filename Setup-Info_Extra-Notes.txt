@@ -1,0 +1,17 @@
+When beginning, install npm, bootstrap & jquery with the following commands in the CLI:
+
+npm init
+- enter through prompts, type yes & enter
+
+npm install bootstrap
+
+npm install jquery
+
+----------------------------------------------------------------------------------
+
+link stylesheet in <head> under the <title>
+
+link scripts such as JS at the bottom of the body
+
+*Creating a todo list that a user can add new things they need to do & also be able to remove things already completed.
+    - first we will create a form

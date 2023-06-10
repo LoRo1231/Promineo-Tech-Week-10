@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production Schedule</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<h1 class="bg-dark text-light p-2 w-100"> Production Schedule </h1>
+
+<body class="container">
+
+    <h3 class="bg-info-subtle p-2 m-4"> Screen Printing </h3>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="job-number"> Job Number </label>
+                        <input type="text" class="form-control" id="job-number">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="customer-name"> Customer Name </label>
+                        <input type="text" class="form-control" id="customer-name">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="print-by-date"> Print By Date </label>
+                        <input type="date" class="form-control" id="print-by-date">
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="deliver-by-date"> Deliver By Date </label>
+                        <input type="date" class="form-control" id="deliver-by-date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="description"> Description </label>
+                        <input type="text" class="form-control" id="description">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button id="add" class="btn btn-primary from-control mt-3"> Add Job </button>
+            </div>
+        </div>
+    </div>
+
+    <table id="list" class="table table-info table-striped">
+        <tr>
+            <th> Job Number </th>
+            <th> Customer Name </th>
+            <th> Description </th>
+            <th> Print By Date </th>
+            <th> Deliver By Date </th>
+            <th> Actions </th>
+        </tr>
+    </table>
+
+
+    <script src="production.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
